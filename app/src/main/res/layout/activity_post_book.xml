@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="fire.auth.com.raddi_new.PostBook">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/post_image_1"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/add_book_photo"
+                tools:ignore="VectorDrawableCompat" />
+
+            <EditText
+                android:id="@+id/name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Book Name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#a49a9a" />
+
+            <EditText
+                android:id="@+id/price_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Price"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#a49a9a" />
+
+            <EditText
+                android:id="@+id/writer_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Writer  (Optional)"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#a49a9a" />
+
+            <EditText
+                android:id="@+id/description_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Description"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textColor="#000"
+                android:textColorHint="#a49a9a" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/postTextLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="click to get the location"
+                    android:maxLines="1"
+                    android:textColorHint="#a49a9a" />
+
+                <Button
+                    android:id="@+id/post_getBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:drawableStart="@drawable/ic_my_location_black_24dp"
+                    android:drawableTint="#fff"
+                    android:text="get"
+                    android:textColor="#fff" />
+
+            </LinearLayout>
+
+
+            <Spinner
+                android:id="@+id/std_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layoutMode="clipBounds"
+                android:padding="6dp" />
+
+            <Button
+                android:id="@+id/post_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Post"
+                android:textColor="#fff" />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

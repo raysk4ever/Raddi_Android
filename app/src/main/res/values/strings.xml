@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">RADDI</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <string name="alertTitle">Please Read our Policy!</string>
+    <string name="alertMessage">All the Data which you are providing to us such as Name, Email, Mobile Number and Your photos will be avaiable to other users who may wants to contact you.</string>
+</resources>
